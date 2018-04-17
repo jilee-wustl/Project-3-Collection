@@ -21,12 +21,13 @@
 			<div class="filter-text" id="basketball" data-shown="false"> BASKETBALL </div>
 			<div class="filter-text" id="baseball" data-shown="false"> BASEBALL </div>
 			<div class="filter-text" id="golf" data-shown="false"> GOLF </div>
-			
-			<div class="filter-arrow" id="diag" data-shown="false">&#8592;</div>
-			<div class="filter-arrow" id="football" data-shown="false">&#8593;</div>
-			<div class="filter-arrow" id="basketball" data-shown="false">&#8594;</div>
-			<div class="filter-arrow" id="baseball" data-shown="false">&#8595;</div>
-			<div class="filter-arrow" id="golf" data-shown="false">&#8601;</div>
+		</div>
+
+		<div class="filters-arrow">
+			<div class="filter-arrow filter-active" id="up" data-shown="true">&#8593;</div>
+			<div class="filter-arrow" id="right" data-shown="false">&#8594;</div>
+			<div class="filter-arrow" id="down" data-shown="false">&#8595;</div>
+			<div class="filter-arrow" id="left" data-shown="false">&#8592;</div>
 		</div>
 
 		<div class="full-cont">
@@ -151,6 +152,8 @@
 	<script type="text/javascript" src="skrollr.js"></script>
 	<script>
 		$(document).ready(function(){
+			var activeCount = 0;
+			
 			skrollr.init({
 				easing: {
 					inverted: function(p) {
@@ -165,12 +168,39 @@
 					$(this).addClass('filter-active');
 					$("img").addClass('hidden-imgs');
 					$("." + this.id).addClass('shown-imgs');
+					activeCount++;
 				}
 				else {
 					$(this).attr('data-shown', 'false');
 					$(this).removeClass('filter-active');
-					$("img").removeClass('hidden-imgs');
 					$("." + this.id).removeClass('shown-imgs');
+					activeCount--;
+					if (activeCount === 0) {
+						$("img").removeClass('hidden-imgs');
+					}
+				}
+			});
+			
+			$(".filter-arrow").click(function() {
+				if ($(this).attr('data-shown') === 'false') {
+					$(".filter-arrow").removeClass('filter-active');
+					$(".filter-arrow").attr('data-shown', 'false');
+					$(this).attr('data-shown', 'true');
+					$(this).addClass('filter-active');
+					
+				//	$("img").addClass('hidden-imgs');
+				//	$("." + this.id).addClass('shown-imgs');
+				//	activeCount++;
+				}
+				else {
+					$(this).attr('data-shown', 'false');
+					$(this).removeClass('filter-active');
+					
+					//$("." + this.id).removeClass('shown-imgs');
+					//activeCount--;
+					//if (activeCount === 0) {
+					//	$("img").removeClass('hidden-imgs');
+					//}
 				}
 			});
 						
