@@ -8,6 +8,10 @@
 </head>
 
 <body>
+		<div class="load">
+			<img src="svg/nike.svg">
+		</div>
+		<div class="page">
 		<div class="filter">
 			<div class="filter-text" id="lifestyle" data-shown="false"> LIFESTYLE </div>
 			<div class="filter-text" id="training" data-shown="false"> TRAINING </div>
@@ -535,7 +539,7 @@
 				<img src="imgs/lifestyle-5.jpg" class="lifestyle">
 			</div>
 		</div>
-		
+		</div>
 		
 	<script type="text/javascript" src="skrollr.js"></script>
 
@@ -703,11 +707,14 @@
 						break;
 					default:		
 						break;
-				}		
+				}
 			});
 		});
 		$(window).on('load', function(){
-			$('html,body').css('opacity', 1);
+			setTimeout(function(){
+				$('.load').css('display','none');
+				$('.page').css('opacity', 1);
+			}, 500);
 		});
 	</script>
 </body>

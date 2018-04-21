@@ -15,6 +15,9 @@ html {
 body {
   width: 100%;
   margin: 0;
+}
+
+.page {
   opacity: 0;
   transition: all 0.5s ease;
 }
@@ -234,10 +237,58 @@ img.shown-imgs {
   transition: all 0.4s ease;
 }
 
+
+@-webkit-keyframes blink {
+  0% {
+      opacity: 1;
+      -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  50% {
+      opacity: 0;
+      -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  100% {
+      stroke-opacity: 1;
+      -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+      -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  50% {
+      opacity: 0;
+      -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  100% {
+      opacity: 1;
+      -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+}
+
 img {
   transform: translate3d(-1px, -1px, 0);
   border:solid 1px transparent;
   border-width:1px 0 0 1px;
+}
+
+.load {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.load {
+  -webkit-animation: blink 1s infinite;
+	-moz-animation: blink 1s infinite;
+	-o-animation: blink 1s infinite;
+	animation: blink 1s infinite;
 }
 
 *,:before,:after {
@@ -245,4 +296,3 @@ img {
 -webkit-box-sizing:border-box;
 box-sizing:border-box;
 -webkit-backface-visibility:hidden;
-}
