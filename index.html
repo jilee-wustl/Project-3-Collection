@@ -705,9 +705,10 @@
 						break;
 				}		
 			});
-			$("html,body").show();
 		});
-		
+		$(window).on('load', function(){
+			$('html,body').css('opacity', 1);
+		});
 	</script>
 </body>
 </html>

@@ -15,7 +15,8 @@ html {
 body {
   width: 100%;
   margin: 0;
-  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .imgViewer {
