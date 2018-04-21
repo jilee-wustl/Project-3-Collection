@@ -3,9 +3,8 @@
 <head>
     <title> Nike Collections </title>
     <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="style1.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="zoomerang.js"></script>
+	<script type="text/javascript" src="jquery.elevatezoom.js"></script>
 </head>
 
 <body>
@@ -13,8 +12,8 @@
 			<div class="filter-text" id="lifestyle" data-shown="false"> LIFESTYLE </div>
 			<div class="filter-text" id="training" data-shown="false"> TRAINING </div>
 			<div class="filter-text" id="running" data-shown="false"> RUNNING </div>
-			<div class="filter-text" id="skateboarding" data-shown="false" style="padding-right: 5px;"> SKATEBOARDING </div>
-			<div class="filter-text" id="trackField" data-shown="false"> TRACK&FIELD </div>
+			<div class="filter-text" id="skate" data-shown="false" style="padding-right: 5px;"> SKATEBOARDING </div>
+			<div class="filter-text" id="track" data-shown="false"> TRACK&FIELD </div>
 			<div class="filter-text" id="tennis" data-shown="false"> TENNIS </div>
 			<div class="filter-text" id="soccer" data-shown="false"> SOCCER </div>
 			<div class="filter-text" id="football" data-shown="false"> FOOTBALL </div>
@@ -23,137 +22,355 @@
 			<div class="filter-text" id="golf" data-shown="false"> GOLF </div>
 		</div>
 
-		<div class="filters-arrow">
-			<div class="filter-arrow filter-active" id="up" data-shown="true">&#8593;</div>
-			<div class="filter-arrow" id="right" data-shown="false">&#8594;</div>
-			<div class="filter-arrow" id="down" data-shown="false">&#8595;</div>
-			<div class="filter-arrow" id="left" data-shown="false">&#8592;</div>
+		<div class="full-cont2">
+			<div class="img-contH" style="top:5vh;" data-0="left:15%" data-30000="left:-1765%">
+				<img src="imgs/baseball-1.jpg" class="baseball">
+				<img src="imgs/football-1.jpg" class="football">
+				<img src="imgs/golf-13.jpg" class="golf">
+				<img src="imgs/basketball-22.jpg" class="basketball">
+				<img src="imgs/running-1.jpg" class="running">
+				<img src="imgs/running-2.jpg" class="running">
+				<img src="imgs/skate-13.jpg" class="skate">
+				<img src="imgs/skate-11.jpg" class="skate">
+				<img src="imgs/tennis-1.jpg" class="tennis">
+				<img src="imgs/basketball-3.jpg" class="basketball">
+				<img src="imgs/lifestyle-1.jpg" class="lifestyle">
+				<img src="imgs/basketball-2.jpg" class="basketball">
+				<img src="imgs/running-3.jpg" class="running">
+				<img src="imgs/training-10.jpg" class="training">
+				<img src="imgs/track-1.jpg" class="track">
+				<img src="imgs/skate-12.jpg" class="skate">
+				<img src="imgs/lifestyle-2.jpg" class="lifestyle">
+				<img src="imgs/track-2.jpg" class="track">
+				<img src="imgs/skate-10.jpg" class="skate">
+				<img src="imgs/soccer-1.jpg" class="soccer">
+				<img src="imgs/running-4.jpg" class="running">
+				<img src="imgs/tennis-2.jpg" class="tennis">
+				<img src="imgs/running-5.jpg" class="running">
+				<img src="imgs/baseball-2.jpg" class="baseball">
+				<img src="imgs/basketball-4.jpg" class="basketball">
+				<img src="imgs/golf-12.jpg" class="golf">
+				<img src="imgs/skate-9.jpg" class="skate">
+				<img src="imgs/tennis-3.jpg" class="tennis">
+				<img src="imgs/football-3.jpg" class="football">
+				<img src="imgs/football-2.jpg" class="football">
+				<img src="imgs/lifestyle-2.jpg" class="lifestyle">
+				<img src="imgs/soccer-2.jpg" class="soccer">
+				<img src="imgs/track-3.jpg" class="track">
+				<img src="imgs/football-11.jpg" class="football">
+				<img src="imgs/training-9.jpg" class="training">
+				<img src="imgs/soccer-2.jpg" class="soccer">
+				<img src="imgs/lifestyle-3.jpg" class="lifestyle">
+				<img src="imgs/skate-8.jpg" class="skate">
+				<img src="imgs/football-5.jpg" class="football">
+				<img src="imgs/golf-10.jpg" class="golf">
+				<img src="imgs/basketball-5.jpg" class="basketball">
+				<img src="imgs/running-6.jpg" class="running">
+				<img src="imgs/track-4.jpg" class="track">
+				<img src="imgs/soccer-3.jpg" class="soccer">
+				<img src="imgs/running-7.jpg" class="running">
+				<img src="imgs/lifestyle-4.jpg" class="lifestyle">
+				<img src="imgs/baseball-3.jpg" class="baseball">
+				<img src="imgs/golf-11.jpg" class="golf">
+				<img src="imgs/golf-9.jpg" class="golf">
+				<img src="imgs/tennis-4.jpg" class="tennis">
+				<img src="imgs/running-8.jpg" class="running">
+				<img src="imgs/running-9.jpg" class="running">
+				<img src="imgs/training-7.jpg" class="training">
+				<img src="imgs/running-10.jpg" class="running">
+				<img src="imgs/baseball-4.jpg" class="baseball">
+				<img src="imgs/track-5.jpg" class="track">
+				<img src="imgs/lifestyle-6.jpg" class="lifestyle">
+				<img src="imgs/lifestyle-7.jpg" class="lifestyle">
+				<img src="imgs/training-8.jpg" class="training">
+				<img src="imgs/skate-7.jpg" class="skate">
+				<img src="imgs/lifestyle-8.jpg" class="lifestyle">
+				<img src="imgs/running-11.jpg" class="running">
+				<img src="imgs/golf-8.jpg" class="golf">
+				<img src="imgs/basketball-6.jpg" class="basketball">
+				<img src="imgs/football-6.jpg" class="football">
+				<img src="imgs/lifestyle-9.jpg" class="lifestyle">
+				<img src="imgs/basketball-7.jpg" class="basketball">
+				<img src="imgs/soccer-4.jpg" class="soccer">
+				<img src="imgs/running-12.jpg" class="running">
+				<img src="imgs/track-6.jpg" class="track">
+				<img src="imgs/golf-7.jpg" class="golf">
+				<img src="imgs/running-13.jpg" class="running">
+			</div>
+			
+			<div class="img-contHr" style="bottom:5vh;" data-0="left:-2160%" data-30000="left:0%">
+				<img src="imgs/skate-6.jpg" class="skate">
+				<img src="imgs/basketball-8.jpg" class="basketball">
+				<img src="imgs/lifestyle-10.jpg" class="lifestyle">
+				<img src="imgs/basketball-9.jpg" class="basketball">
+				<img src="imgs/lifestyle-11.jpg" class="lifestyle">
+				<img src="imgs/skate-5.jpg" class="skate">
+				<img src="imgs/soccer-5.jpg" class="soccer">
+				<img src="imgs/football-7.jpg" class="football">
+				<img src="imgs/golf-6.jpg" class="golf">
+				<img src="imgs/soccer-6.jpg" class="soccer">
+				<img src="imgs/basketball-10.jpg" class="basketball">
+				<img src="imgs/track-7.jpg" class="track">
+				<img src="imgs/tennis-5.jpg" class="tennis">
+				<img src="imgs/training-6.jpg" class="training">
+				<img src="imgs/lifestyle-12.jpg" class="lifestyle">
+				<img src="imgs/baseball-5.jpg" class="baseball">
+				<img src="imgs/baseball-6.jpg" class="baseball">
+				<img src="imgs/basketball-1.jpg" class="basketball">
+				<img src="imgs/football-8.jpg" class="football">
+				<img src="imgs/baseball-7.jpg" class="baseball">
+				<img src="imgs/track-8.jpg" class="track">
+				<img src="imgs/track-9.jpg" class="track">
+				<img src="imgs/lifestyle-13.jpg" class="lifestyle">
+				<img src="imgs/tennis-6.jpg" class="tennis">
+				<img src="imgs/football-10.jpg" class="football">
+				<img src="imgs/skate-4.jpg" class="skate">
+				<img src="imgs/basketball-11.jpg" class="basketball">
+				<img src="imgs/football-9.jpg" class="football">
+				<img src="imgs/basketball-12.jpg" class="basketball">
+				<img src="imgs/track-10.jpg" class="track">
+				<img src="imgs/training-5.jpg" class="training">
+				<img src="imgs/training-4.jpg" class="training">
+				<img src="imgs/running-14.jpg" class="running">
+				<img src="imgs/running-15.jpg" class="running">
+				<img src="imgs/track-11.jpg" class="track">
+				<img src="imgs/golf-5.jpg" class="golf">
+				<img src="imgs/running-16.jpg" class="running">
+				<img src="imgs/track-12.jpg" class="track">
+				<img src="imgs/track-13.jpg" class="track">
+				<img src="imgs/basketball-13.jpg" class="basketball">
+				<img src="imgs/basketball-14.jpg" class="basketball">
+				<img src="imgs/basketball-15.jpg" class="basketball">
+				<img src="imgs/lifestyle-14.jpg" class="lifestyle">
+				<img src="imgs/golf-3.jpg" class="golf">
+				<img src="imgs/baseball-8.jpg" class="baseball">
+				<img src="imgs/golf-2.jpg" class="golf">
+				<img src="imgs/skate-3.jpg" class="skate">
+				<img src="imgs/soccer-10.jpg" class="soccer">
+				<img src="imgs/training-3.jpg" class="training">
+				<img src="imgs/training-2.jpg" class="training">
+				<img src="imgs/soccer-7.jpg" class="soccer">
+				<img src="imgs/running-17.jpg" class="running">
+				<img src="imgs/golf-4.jpg" class="golf">
+				<img src="imgs/tennis-7.jpg" class="tennis">
+				<img src="imgs/training-1.jpg" class="training">
+				<img src="imgs/basketball-16.jpg" class="basketball">
+				<img src="imgs/soccer-8.jpg" class="soccer">
+				<img src="imgs/basketball-20.jpg" class="basketball">
+				<img src="imgs/lifestyle-17.jpg" class="lifestyle">
+				<img src="imgs/running-18.jpg" class="running">
+				<img src="imgs/lifestyle-19.jpg" class="lifestyle">
+				<img src="imgs/skate-2.jpg" class="skate">
+				<img src="imgs/running-19.jpg" class="running">
+				<img src="imgs/basketball-18.jpg" class="basketball">
+				<img src="imgs/lifestyle-15.jpg" class="lifestyle">
+				<img src="imgs/soccer-9.jpg" class="soccer">
+				<img src="imgs/running-20.jpg" class="running">
+				<img src="imgs/skate-1.jpg" class="skate">
+				<img src="imgs/lifestyle-18.jpg" class="lifestyle">
+				<img src="imgs/golf-1.jpg" class="golf">
+				<img src="imgs/basketball-19.jpg" class="basketball">
+				<img src="imgs/lifestyle-5.jpg" class="lifestyle">
+				<img src="imgs/soccer-8.jpg" class="soccer">
+				<img src="imgs/basketball-20.jpg" class="basketball">
+				<img src="imgs/lifestyle-17.jpg" class="lifestyle">
+				<img src="imgs/running-18.jpg" class="running">
+				<img src="imgs/lifestyle-19.jpg" class="lifestyle">
+				<img src="imgs/skate-2.jpg" class="skate">
+				<img src="imgs/running-19.jpg" class="running">
+				<img src="imgs/basketball-18.jpg" class="basketball">
+				<img src="imgs/lifestyle-15.jpg" class="lifestyle">
+				<img src="imgs/soccer-9.jpg" class="soccer">
+				<img src="imgs/running-20.jpg" class="running">
+				<img src="imgs/skate-1.jpg" class="skate">
+				<img src="imgs/lifestyle-18.jpg" class="lifestyle">
+				<img src="imgs/golf-1.jpg" class="golf">
+				<img src="imgs/basketball-19.jpg" class="basketball">
+				<img src="imgs/lifestyle-5.jpg" class="lifestyle">
+			</div>
 		</div>
-
-		<div class="full-cont">
-			<div class="img-cont" style="left:14%;" data-0="bottom:0%" data-2800="bottom:-100%">
-				<img src="1.png" class="lifestyle">
-				<img src="1.png" class="training">
-				<img src="1.png" class="lifestyle">
-				<img src="1.png" class="training">
-				<img src="1.png" class="training">
-				<img src="1.png" class="lifestyle">
-				<img src="1.png" class="training">
-				<img src="1.png" class="training">
-				<img src="1.png" class="lifestyle">
-				<img src="1.png">
+		
+		
+		<div class="full-cont1">
+			<div class="img-cont" style="left:22vw; transform: rotate(180deg);" data-0="bottom:5%" data-15000="bottom:-220%">
+				<img src="imgs/baseball-1.jpg" class="baseball">
+				<img src="imgs/football-1.jpg" class="football">
+				<img src="imgs/golf-13.jpg" class="golf">
+				<img src="imgs/basketball-22.jpg" class="basketball">
+				<img src="imgs/running-1.jpg" class="running">
+				<img src="imgs/running-2.jpg" class="running">
+				<img src="imgs/skate-13.jpg" class="skate">
+				<img src="imgs/skate-11.jpg" class="skate">
+				<img src="imgs/tennis-1.jpg" class="tennis">
+				<img src="imgs/basketball-3.jpg" class="basketball">
+				<img src="imgs/lifestyle-1.jpg" class="lifestyle">
+				<img src="imgs/basketball-2.jpg" class="basketball">
+				<img src="imgs/running-3.jpg" class="running">
+				<img src="imgs/training-10.jpg" class="training">
+				<img src="imgs/track-1.jpg" class="track">
+				<img src="imgs/skate-12.jpg" class="skate">
 			</div>
 			
-			<div class="img-cont" style="left:22%;" data-0="bottom[inverted]:0%" data-2800="bottom[inverted]:-100%">
-				<img src="2.png">
-				<img src="2.png" class="training">
-				<img src="2.png" class="training">
-				<img src="2.png" class="lifestyle">
-				<img src="2.png">
-				<img src="2.png" class="training">
-				<img src="2.png" class="lifestyle">
-				<img src="2.png" class="training">
-				<img src="2.png" class="training">
-				<img src="2.png" class="training">
+			<div class="img-cont" style="left:30vw;" data-0="bottom[inverted]:0%" data-15000="bottom[inverted]:-225%">
+				<img src="imgs/lifestyle-2.jpg" class="lifestyle">
+				<img src="imgs/track-2.jpg" class="track">
+				<img src="imgs/skate-10.jpg" class="skate">
+				<img src="imgs/soccer-1.jpg" class="soccer">
+				<img src="imgs/running-4.jpg" class="running">
+				<img src="imgs/tennis-2.jpg" class="tennis">
+				<img src="imgs/running-5.jpg" class="running">
+				<img src="imgs/baseball-2.jpg" class="baseball">
+				<img src="imgs/basketball-4.jpg" class="basketball">
+				<img src="imgs/golf-12.jpg" class="golf">
+				<img src="imgs/skate-9.jpg" class="skate">
+				<img src="imgs/tennis-3.jpg" class="tennis">
+				<img src="imgs/football-3.jpg" class="football">
+				<img src="imgs/football-2.jpg" class="football">
+				<img src="imgs/lifestyle-2.jpg" class="lifestyle">
+				<img src="imgs/soccer-2.jpg" class="soccer">
 			</div>
 			
-			<div class="img-cont" style="left:30%;" data-0="bottom:0%" data-2800="bottom:-100%">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
+			<div class="img-cont" style="left:38vw; transform: rotate(180deg);" data-0="bottom:5%" data-15000="bottom:-220%">
+				<img src="imgs/track-3.jpg" class="track">
+				<img src="imgs/football-11.jpg" class="football">
+				<img src="imgs/training-9.jpg" class="training">
+				<img src="imgs/soccer-2.jpg" class="soccer">
+				<img src="imgs/lifestyle-3.jpg" class="lifestyle">
+				<img src="imgs/skate-8.jpg" class="skate">
+				<img src="imgs/football-5.jpg" class="football">
+				<img src="imgs/golf-10.jpg" class="golf">
+				<img src="imgs/basketball-5.jpg" class="basketball">
+				<img src="imgs/running-6.jpg" class="running">
+				<img src="imgs/track-4.jpg" class="track">
+				<img src="imgs/soccer-3.jpg" class="soccer">
+				<img src="imgs/running-7.jpg" class="running">
+				<img src="imgs/lifestyle-4.jpg" class="lifestyle">
+				<img src="imgs/baseball-3.jpg" class="baseball">
+				<img src="imgs/golf-11.jpg" class="golf">
 			</div>
 			
-			<div class="img-cont" style="left:38%;" data-0="bottom[inverted]:0%" data-2800="bottom[inverted]:-100%">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
+			<div class="img-cont" style="left:46vw;" data-0="bottom[inverted]:0%" data-15000="bottom[inverted]:-225%">
+				<img src="imgs/golf-9.jpg" class="golf">
+				<img src="imgs/tennis-4.jpg" class="tennis">
+				<img src="imgs/running-8.jpg" class="running">
+				<img src="imgs/running-9.jpg" class="running">
+				<img src="imgs/training-7.jpg" class="training">
+				<img src="imgs/running-10.jpg" class="running">
+				<img src="imgs/baseball-4.jpg" class="baseball">
+				<img src="imgs/track-5.jpg" class="track">
+				<img src="imgs/lifestyle-6.jpg" class="lifestyle">
+				<img src="imgs/lifestyle-7.jpg" class="lifestyle">
+				<img src="imgs/training-8.jpg" class="training">
+				<img src="imgs/skate-7.jpg" class="skate">
+				<img src="imgs/lifestyle-8.jpg" class="lifestyle">
+				<img src="imgs/running-11.jpg" class="running">
+				<img src="imgs/golf-8.jpg" class="golf">
+				<img src="imgs/basketball-6.jpg" class="basketball">
 			</div>
 			
-			<div class="img-cont" data-0="left:46%; bottom:0%" data-2800="bottom:-100%">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
+			<div class="img-cont" style="left:54vw; transform: rotate(180deg);" data-0="bottom:5%" data-15000="bottom:-220%">
+				<img src="imgs/football-6.jpg" class="football">
+				<img src="imgs/lifestyle-9.jpg" class="lifestyle">
+				<img src="imgs/basketball-7.jpg" class="basketball">
+				<img src="imgs/soccer-4.jpg" class="soccer">
+				<img src="imgs/running-12.jpg" class="running">
+				<img src="imgs/track-6.jpg" class="track">
+				<img src="imgs/golf-7.jpg" class="golf">
+				<img src="imgs/running-13.jpg" class="running">
+				<img src="imgs/skate-6.jpg" class="skate">
+				<img src="imgs/basketball-8.jpg" class="basketball">
+				<img src="imgs/lifestyle-10.jpg" class="lifestyle">
+				<img src="imgs/basketball-9.jpg" class="basketball">
+				<img src="imgs/lifestyle-11.jpg" class="lifestyle">
+				<img src="imgs/skate-5.jpg" class="skate">
+				<img src="imgs/soccer-5.jpg" class="soccer">
+				<img src="imgs/football-7.jpg" class="football">
 			</div>
 			
-			<div class="img-cont" data-0="left:54%; bottom[inverted]:0%" data-2800="bottom[inverted]:-100%">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
+			<div class="img-cont" style="left:62vw;" data-0="bottom[inverted]:0%" data-15000="bottom[inverted]:-225%">
+				<img src="imgs/golf-6.jpg" class="golf">
+				<img src="imgs/soccer-6.jpg" class="soccer">
+				<img src="imgs/basketball-10.jpg" class="basketball">
+				<img src="imgs/track-7.jpg" class="track">
+				<img src="imgs/tennis-5.jpg" class="tennis">
+				<img src="imgs/training-6.jpg" class="training">
+				<img src="imgs/lifestyle-12.jpg" class="lifestyle">
+				<img src="imgs/baseball-5.jpg" class="baseball">
+				<img src="imgs/baseball-6.jpg" class="baseball">
+				<img src="imgs/basketball-1.jpg" class="basketball">
+				<img src="imgs/football-8.jpg" class="football">
+				<img src="imgs/baseball-7.jpg" class="baseball">
+				<img src="imgs/track-8.jpg" class="track">
+				<img src="imgs/track-9.jpg" class="track">
+				<img src="imgs/lifestyle-13.jpg" class="lifestyle">
+				<img src="imgs/tennis-6.jpg" class="tennis">
 			</div>
 			
-			<div class="img-cont last" data-0="left:62%; bottom:0%" data-2800="bottom:-100%">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
+			<div class="img-cont" style="left:70vw; transform: rotate(180deg);" data-0="bottom:5%" data-15000="bottom:-220%">
+				<img src="imgs/football-10.jpg" class="football">
+				<img src="imgs/skate-4.jpg" class="skate">
+				<img src="imgs/basketball-11.jpg" class="basketball">
+				<img src="imgs/football-9.jpg" class="football">
+				<img src="imgs/basketball-12.jpg" class="basketball">
+				<img src="imgs/track-10.jpg" class="track">
+				<img src="imgs/training-5.jpg" class="training">
+				<img src="imgs/training-4.jpg" class="training">
+				<img src="imgs/running-14.jpg" class="running">
+				<img src="imgs/running-15.jpg" class="running">
+				<img src="imgs/track-11.jpg" class="track">
+				<img src="imgs/golf-5.jpg" class="golf">
+				<img src="imgs/running-16.jpg" class="running">
+				<img src="imgs/track-12.jpg" class="track">
+				<img src="imgs/track-13.jpg" class="track">
+				<img src="imgs/basketball-13.jpg" class="basketball">
 			</div>
 			
-			<div class="img-cont" data-0="left:70%; bottom[inverted]:0%" data-2800="bottom[inverted]:-100%">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
-				<img src="2.png">
+			<div class="img-cont" style="left:78vw;" data-0="bottom[inverted]:0%" data-15000="bottom[inverted]:-225%">
+				<img src="imgs/basketball-14.jpg" class="basketball">
+				<img src="imgs/basketball-15.jpg" class="basketball">
+				<img src="imgs/lifestyle-14.jpg" class="lifestyle">
+				<img src="imgs/golf-3.jpg" class="golf">
+				<img src="imgs/baseball-8.jpg" class="baseball">
+				<img src="imgs/golf-2.jpg" class="golf">
+				<img src="imgs/skate-3.jpg" class="skate">
+				<img src="imgs/soccer-10.jpg" class="soccer">
+				<img src="imgs/training-3.jpg" class="training">
+				<img src="imgs/training-2.jpg" class="training">
+				<img src="imgs/soccer-7.jpg" class="soccer">
+				<img src="imgs/running-17.jpg" class="running">
+				<img src="imgs/golf-4.jpg" class="golf">
+				<img src="imgs/tennis-7.jpg" class="tennis">
+				<img src="imgs/training-1.jpg" class="training">
+				<img src="imgs/basketball-16.jpg" class="basketball">
 			</div>
 			
-			<div class="img-cont last" data-0="left:78%; bottom:0%" data-2800="bottom:-100%">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
-				<img src="1.png">
+			<div class="img-cont" style="left:86vw; transform: rotate(180deg);" data-0="bottom:5%" data-15000="bottom:-220%">
+				<img src="imgs/soccer-8.jpg" class="soccer">
+				<img src="imgs/basketball-20.jpg" class="basketball">
+				<img src="imgs/lifestyle-17.jpg" class="lifestyle">
+				<img src="imgs/running-18.jpg" class="running">
+				<img src="imgs/lifestyle-19.jpg" class="lifestyle">
+				<img src="imgs/skate-2.jpg" class="skate">
+				<img src="imgs/running-19.jpg" class="running">
+				<img src="imgs/basketball-18.jpg" class="basketball">
+				<img src="imgs/lifestyle-15.jpg" class="lifestyle">
+				<img src="imgs/soccer-9.jpg" class="soccer">
+				<img src="imgs/running-20.jpg" class="running">
+				<img src="imgs/skate-1.jpg" class="skate">
+				<img src="imgs/lifestyle-18.jpg" class="lifestyle">
+				<img src="imgs/golf-1.jpg" class="golf">
+				<img src="imgs/basketball-19.jpg" class="basketball">
+				<img src="imgs/lifestyle-5.jpg" class="lifestyle">
 			</div>
 		</div>
-	<script type="text/javascript" src="zoomooz.js"></script>
-
+		
+		
 	<script type="text/javascript" src="skrollr.js"></script>
+
 	<script>
 		$(document).ready(function(){
 			var activeCount = 0;
-			
+
 			skrollr.init({
 				easing: {
 					inverted: function(p) {
@@ -161,6 +378,12 @@
 					}
 				}
 			});
+			
+			$("#1").elevateZoom({
+				zoomType: "lens",
+				lensShape: "round",
+				lensSize: 150
+			  });
 			
 			$(".filter-text").click(function() {
 				if ($(this).attr('data-shown') === 'false') {
@@ -187,15 +410,13 @@
 					$(".filter-arrow").attr('data-shown', 'false');
 					$(this).attr('data-shown', 'true');
 					$(this).addClass('filter-active');
-					
 				//	$("img").addClass('hidden-imgs');
 				//	$("." + this.id).addClass('shown-imgs');
 				//	activeCount++;
 				}
 				else {
 					$(this).attr('data-shown', 'false');
-					$(this).removeClass('filter-active');
-					
+					$(this).removeClass('filter-active');	
 					//$("." + this.id).removeClass('shown-imgs');
 					//activeCount--;
 					//if (activeCount === 0) {
@@ -203,50 +424,6 @@
 					//}
 				}
 			});
-						
-            Zoomerang.config({
-					transitionDuration: '0.7s',
-                    maxHeight: 600,
-                    maxWidth: 600,
-                    bgColor: '#F6F6F6',
-                    bgOpacity: 1,
-					deepCopy: false,
-                    onOpen: openCallback,
-                    onClose: closeCallback,
-                    onBeforeOpen: beforeOpenCallback,
-                    onBeforeClose: beforeCloseCallback
-                }).listen('img');
-
-            function openCallback (el) {
-                console.log('zoomed in on: ');
-                console.log(el);
-            }
-
-            function closeCallback (el) {
-                console.log('zoomed out on: ');
-				//$(".img-cont").css('opacity', '1');
-                console.log(el);
-            }
-
-            function beforeOpenCallback (el) {
-            	console.log('on before zoomed in on:');
-				//$(".img-cont").css('opacity', '0');
-            	console.log(el);
-            }
-
-            function beforeCloseCallback (el) {
-            	console.log('on before zoomed out on:');
-            	console.log(el);
-            }
-
-			
-		//	$(window).on("scroll", function() {
-		//	var scrollHeight = $(document).height();
-		//	var scrollPosition = $(window).height() + $(window).scrollTop();
-		//	if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-		//		var top = $(window).scrollTop(0);
-		//	}
-		//});
 		});	
 	</script>
 </body>

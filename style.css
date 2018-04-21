@@ -17,6 +17,15 @@ body {
   margin: 0;
 }
 
+.imgViewer {
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .filter {
   -webkit-display: -webkit-box;
   -webkit-display: -webkit-flex;
@@ -39,6 +48,7 @@ body {
 
 .filter-text {
   width: max-content;
+  color: #000000;
   opacity: 0.4;
 }
 
@@ -51,22 +61,6 @@ body {
   position: relative;
   width: 20px;
 }
-
-/*#left {*/
-/*  top: 50%;*/
-/*  transform: translateY(-50%);*/
-/*}*/
-/**/
-/*#up {*/
-/*  left: 50%;*/
-/*  top: -50%;*/
-/*  transform: translateX(-50%) translateY(0%);*/
-/*}*/
-/**/
-/*#right {*/
-/*  top: 50%;*/
-/*  transform: translateY(-50%);*/
-/*}*/
 
 .filters-arrow {
   display: block;
@@ -104,27 +98,75 @@ body {
   transition: all 0.4s ease;
 }
 
-.full-cont {
+.full-cont1 {
+  display: none;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
 
+.full-cont2 {
+  width: 100%;
+  height: 100%;
+}
+
 .img-cont {
-  width: 8%;
+  width: 8vw;
   position: fixed;
+}
+
+.img-contH {
+  width: 200000px;
+  height: 45vh;
+  position: fixed;
+}
+
+.img-contHr {
+  width: 200000px;
+  height: 45vh;
+  position: fixed;
+}
+
+.img-contH img {
+  width: auto;
+  transform: rotate(270deg);
+  height: 45vh;
+  float: left;
+  margin-right: 20px;
+  /*filter: grayscale(100);*/
+  display: inline-block;
+  transition: all 0.4s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-contHr img {
+  width: auto;
+  transform: rotate(90deg);
+  height: 45vh;
+  float: left;
+  margin-right: 20px;
+  /*filter: grayscale(100);*/
+  display: inline-block;
+  transition: all 0.4s ease;
+  opacity: 1;
+  visibility: visible;
 }
 
 .img-cont.last {
   margin-right: 0px;
 }
 
-img {
+
+
+
+
+.img-cont img {
   width: 8vw;
   height: 8vw;
   float: left;
-  margin-bottom: 62px;
-  filter: grayscale(100);
+  margin-bottom: 50px;
+  /*filter: grayscale(100);*/
   display: inline-block;
   transition: all 0.4s ease;
   opacity: 1;
@@ -132,8 +174,7 @@ img {
 }
 
 img:hover {
-  cursor: pointer;
-  filter: grayscale(0);
+  /*filter: grayscale(0);*/
   transition: all 0.2s ease-in;
 }
 
