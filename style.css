@@ -239,10 +239,6 @@ img {
   border-width:1px 0 0 1px;
 }
 
-.full-cont3 img {
-  display: none;
-}
-
 *,:before,:after {
 -moz-box-sizing:border-box;
 -webkit-box-sizing:border-box;

@@ -564,7 +564,40 @@
 					$("img").addClass('hidden-imgs');
 					$("." + this.id).addClass('shown-imgs');
 					if($('.full-cont3').is(':visible')){
-						$("."+this.id).css('display', 'block !important');
+						$('.full-cont3 img').css('display','none');
+						if ($("#lifestyle").attr('data-shown') === 'true') {
+							$(".lifestyle").css('display', 'block');
+						}
+						if ($("#basketball").attr('data-shown') === 'true') {
+							$(".basketball").css('display', 'block');
+						}
+						if ($("#training").attr('data-shown') === 'true') {
+							$(".training").css('display', 'block');
+						}
+						if ($("#running").attr('data-shown') === 'true') {
+							$(".running").css('display', 'block');
+						}
+						if ($("#skate").attr('data-shown') === 'true') {
+							$(".skate").css('display', 'block');
+						}
+						if ($("#track").attr('data-shown') === 'true') {
+							$(".track").css('display', 'block');
+						}
+						if ($("#tennis").attr('data-shown') === 'true') {
+							$(".tennis").css('display', 'block');
+						}
+						if ($("#soccer").attr('data-shown') === 'true') {
+							$(".soccer").css('display', 'block');
+						}
+						if ($("#football").attr('data-shown') === 'true') {
+							$(".football").css('display', 'block');
+						}
+						if ($("#baseball").attr('data-shown') === 'true') {
+							$(".baseball").css('display', 'block');
+						}
+						if ($("#golf").attr('data-shown') === 'true') {
+							$(".golf").css('display', 'block');
+						}
 						$('html, body').scrollTop(0);
 					}
 					activeCount++;
@@ -575,12 +608,18 @@
 					$("." + this.id).removeClass('shown-imgs');
 					if($('.full-cont3').is(':visible')){
 						$("."+this.id).css('display', 'none');
+						if(activeCount === 0) {
+							$(".full-cont3 img").css('display', 'block');
+						}
 					}
 					activeCount--;
 					if (activeCount === 0) {
 						$("img").removeClass('hidden-imgs');
+						if($('.full-cont3').is(':visible')){
+							$(".full-cont3 img").css('display', 'block');
+						}
 					}
-				}				
+				}
 			});
 			
 			$(".filter-color").click(function() {
@@ -623,7 +662,9 @@
 						$(".full-cont1").removeClass("page-active");
 						$(".full-cont2").removeClass("page-active");
 						$(".full-cont3").addClass("page-active");
-						$('img').css('display','none');
+						if (activeCount > 0) {
+							$('.full-cont3 img').css('display','none');
+						}
 						if ($("#lifestyle").attr('data-shown') === 'true') {
 							$(".lifestyle").css('display', 'block');
 						}
