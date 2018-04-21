@@ -59,13 +59,13 @@ body {
   overflow: hidden;
   font-size: 36px;
   font-family: 'Trade', Helvetica Neue, sans-serif;
-  font-style: oblique;
 }
 
 .filter-text {
   width: max-content;
   color: #000000;
   opacity: 0.4;
+  padding-right: 10px;
 }
 
 .filter-color {
